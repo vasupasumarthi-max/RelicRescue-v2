@@ -32,13 +32,14 @@ export default function TitleScreen() {
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="absolute inset-0 flex flex-col items-center justify-center"
         >
-          <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]"
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663320185665/UMytU4TJWeddHb6m8REdFw/relic-rescue-logo-hq-HVdPk8TKjZMU5KeSpHRJsX.png"
+            alt="Relic Rescue"
+            className="w-[300px] md:w-[420px] h-auto drop-shadow-[0_8px_16px_rgba(0,0,0,0.8)]"
+          />
+          <p className="text-lg md:text-2xl text-amber-200 font-bold mt-1 drop-shadow-[0_3px_6px_rgba(0,0,0,0.9)] tracking-[0.3em] uppercase"
             style={{ fontFamily: "'Fredoka', sans-serif" }}>
-            UNEARTHED
-          </h1>
-          <p className="text-xl md:text-2xl text-amber-300 font-bold mt-1 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
-            style={{ fontFamily: "'Fredoka', sans-serif" }}>
-            Relic Rescue
+            Unearthed
           </p>
         </motion.div>
 
@@ -107,8 +108,8 @@ export default function TitleScreen() {
           >
             <item.icon className={`w-8 h-8 ${item.iconColor}`} />
             <div className="text-left">
-              <div className="text-lg font-bold" style={{ fontFamily: "'Fredoka', sans-serif" }}>{item.label}</div>
-              <div className={`text-xs ${item.subColor}`}>{item.sub}</div>
+              <div className="text-lg font-bold tracking-wide" style={{ fontFamily: "'Nunito', sans-serif", fontStyle: 'normal' }}>{item.label}</div>
+              <div className={`text-xs ${item.subColor}`} style={{ fontFamily: "'Nunito', sans-serif" }}>{item.sub}</div>
             </div>
           </motion.button>
         ))}
